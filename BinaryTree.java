@@ -2,10 +2,10 @@ public class BinaryTree {
 
 	protected node root;
 	
-	public static class node{
-		private int data;
-		private node left;
-		private node right;
+	protected static class node<Integer>{
+		int data;
+		node left;
+		node right;
 		
 		public node(int data, node left, node right) {
 			this.data = data;
