@@ -1,5 +1,5 @@
 /**
- * Prints the Binary Tree in Pre-Order traversal
+ * Prints the Binary Tree in Pre-Order traversal.
  * @author Taylor Brookes
  * @version 4 October 2023
  */
