@@ -6,6 +6,15 @@
 public class BTPrinting extends BinaryTree {
 	public static void main(String[] args) {
 		/**
+		 * helper method
+		 */
+		private void preOrder(node<E> node) {
+			if (node == null) return;
+			System.out.print(node.data);
+			preOrder(node.left);
+			preOrder(node.right);
+		}
+		/**
 		 * override testing method
 		 */
 		@Override
@@ -17,7 +26,7 @@ public class BTPrinting extends BinaryTree {
 		 * with Pre-Order traversal
 		 */
 		public void preOrder() {
-		
+			preOrder(root);
 		}
 		/**
 		 * this method prints nodes on the leftmost
@@ -27,5 +36,10 @@ public class BTPrinting extends BinaryTree {
 		public void printLeft() {
 			
 		}
+		
+		/**
+		 * sample tree
+		 */
+		
 	}
 }
