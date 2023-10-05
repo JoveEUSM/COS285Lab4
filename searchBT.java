@@ -35,13 +35,20 @@ public class searchBT extends BinaryTree {
     
     /**
      * @author Ellis Fitzgerald
-     * @param item - The target to search for in searchBT
+     * @param item - The target to search for in this searchBT
      * @return The level {@coden} that item is found in or {@code-1} if not found
      */
     public int getLevel(int item) {
         return getLevel(root, item, 1);
     }
     
+    /**
+     * @author Ellis Fitzgerald
+     * @param localRoot - The current localRoot to search for item
+     * @param item - The target to search for in this searchBT
+     * @param currentLevel - level that localRoot is on
+     * @return The level {@coden} that item is found in or {@code-1} if not found
+     */
     private int getLevel(node localRoot, int item, int currentLevel) {
         if (localRoot == null){
             return -1;
